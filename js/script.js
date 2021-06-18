@@ -1,5 +1,5 @@
-import initHandleClick from "./handleclickfetch.js"
-import initFetchApi from "./fetch.js"
+import initHandleClick from "./modules/handleclickfetch.js"
+import initFetchApi from "./modules/fetch.js"
 
 // Classe evento
 const handleClick = new initHandleClick('.btn-buscar')
