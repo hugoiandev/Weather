@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="module" src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Weather</title>
 </head>
 <body>
-    <div class="container-temp">
-        <div class="temperatura-img">
-            <img src="./img/ClearNightV3.svg" alt="">
+    <div class="container">
+        <div class="container-temp">
+            <h1></h1>
+            <div class="temp-atual">
+                <span class="graus"></span>
+                <span class="fahrenheit"></span>
+            </div>
+            <div class="div-tempo">
+                <span class="tempo"></span>
+            </div>
         </div>
-        <div>
-            <span class="graus"></span>
-            <span class="fahrenheit"></span>
-        </div>
+        <button class="js">Click</button>
     </div>
-    <h1>Ola mundo!</h1>
-    <button class="js">Click</button>
+
+    <script type="module" src="./js/script.js"></script>
 </body>
 </html>
