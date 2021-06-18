@@ -15,7 +15,7 @@ export default class initHandleClick {
 
     buscaCidade() {
         cidade = buscaCidade.value
-        const fetchApi = new initFetchApi(`http://api.openweathermap.org/data/2.5/weather?q=${cidade},br&APPID=c3083241c1c8d585022a63795c5c94fa`)
+        const fetchApi = new initFetchApi(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},br&APPID=c3083241c1c8d585022a63795c5c94fa`)
         fetchApi.fetch()
     }
 }

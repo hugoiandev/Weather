@@ -15,6 +15,7 @@ export default class FetchApi {
         try {
             const promiss = await fetch(this.api)
             const resultJson = await promiss.json()
+            
             this.h1.innerText = `${resultJson.name}, ${resultJson.sys.country}`
             this.spanGraus.innerText = `C ${conversores.convCelsius(resultJson.main.temp)}°`
             this.spanFah.innerText = `F ${conversores.convFah(resultJson.main.temp)}°`
