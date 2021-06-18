@@ -81,6 +81,24 @@ h4, p {
     margin-left: 30px;
 }
 
+.ativo {
+    animation-name: gira-update;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes gira-update {
+    from {
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    }
+}
+
 h1 {
     font-family: 'Roboto';
     color: white;

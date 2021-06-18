@@ -3,6 +3,7 @@ import initFetchApi from "./fetch.js"
 let cidade
 const buscaCidade = document.querySelector('.busca-cidade')
 const update = document.querySelector('.link-update')
+const iconUpdate = document.querySelector('.icon-update')
 
 export default class initHandleClick {
     constructor(seletor) {
@@ -18,10 +19,15 @@ export default class initHandleClick {
 
     updateWeather(event) {
         event.preventDefault()
+        iconUpdate.classList.add('ativo')
+        setTimeout(() => {
+            if (iconUpdate.classList.contains('ativo')) {
+                iconUpdate.classList.remove('ativo')
+            }
+        }, 3000)
+
         this.fetchApi2 = new initFetchApi(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},br&APPID=c3083241c1c8d585022a63795c5c94fa`)
         this.fetchApi2.fetch()
-
-        console.log('Clicou')
     }
 
     initEvent() {

@@ -4,7 +4,7 @@ const conversores = new Conversores
 export default class FetchApi {
     constructor(api) {
         this.api = api
-        
+
         this.h1 = document.querySelector('h1')
         this.spanGraus = document.querySelector('.graus')
         this.spanFah = document.querySelector('.fahrenheit')
@@ -31,8 +31,6 @@ export default class FetchApi {
             this.humidity.innerText = `${resultJson.main.humidity} %`
             this.tempMax.innerText = `${conversores.convCelsius(resultJson.main.temp_max)}° ${conversores.convFah(resultJson.main.temp_max)}°`
             this.tempMin.innerText = `${conversores.convCelsius(resultJson.main.temp_min)}° ${conversores.convFah(resultJson.main.temp_min)}°`
-
-            console.log(resultJson)
             
         } catch {
             console.log(Error())
