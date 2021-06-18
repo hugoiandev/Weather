@@ -1,3 +1,46 @@
-.container-temp {
+body {
+    margin: 0;
+}
+
+
+
+
+
+.container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 8px);
+    height: 100vh;
+}
+
+.container-temp {
+    height: 400px;
+    width: 400px;
+    background: cornflowerblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.temp-atual span:nth-child(1) {
+    margin-right: 5px;
+}
+
+.temp-atual span:nth-child(2) {
+    margin-left: 5px;
+}
+
+.div-tempo {
+    margin-top: 20px;
+}
+
+h1 {
+    font-family: 'Roboto';
+}
+
+span {
+    font-family: 'Roboto';
+    font-size: 25px;
 }

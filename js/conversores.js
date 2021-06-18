@@ -1,7 +1,7 @@
 export default class Conversores {
 
     // Converte de Kelvin para Graus
-    convKelvin(valor) {
+    convCelsius(valor) {
         return Math.floor(valor - 273.15)
     }
 
