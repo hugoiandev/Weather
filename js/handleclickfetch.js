@@ -1,6 +1,6 @@
 import initFetchApi from "./fetch.js"
 
-let cidade
+let cidade = 'Hortolandia'
 const buscaCidade = document.querySelector('.busca-cidade')
 const update = document.querySelector('.link-update')
 const iconUpdate = document.querySelector('.icon-update')
