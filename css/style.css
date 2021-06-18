@@ -2,6 +2,12 @@ body {
     margin: 0;
 }
 
+h4, p {
+    margin: 0;
+    color: white;
+    font-family: 'Roboto';
+}
+
 .div-inputs {
     margin-top: 30px;
 }
@@ -9,8 +15,19 @@ body {
 .div-inputs input {
     font-family: 'Roboto';
     font-size: 15px;
-    padding: 5px;
-    border: 3px solid rgb(0, 218, 233);
+    padding: 6px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background: none;
+    color: white;
+}
+
+.div-inputs input:nth-child(2) {
+    cursor: pointer;
+}
+
+.div-inputs input::placeholder {
+    color: white;
 }
 
 
@@ -25,7 +42,7 @@ body {
 .container-temp {
     height: 400px;
     width: 400px;
-    background: cornflowerblue;
+    background: url(../img/img-tempo1.jpg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,11 +61,33 @@ body {
     margin-top: 20px;
 }
 
+.info-tempo {
+    display: flex;
+    margin-top: 40px;
+}
+
+.info-tempo div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.info-tempo div p {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.link-update {
+    margin-left: 30px;
+}
+
 h1 {
     font-family: 'Roboto';
+    color: white;
 }
 
 span {
     font-family: 'Roboto';
     font-size: 25px;
+    color: white;
 }
