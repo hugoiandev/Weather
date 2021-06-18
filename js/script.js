@@ -2,7 +2,7 @@ import initHandleClick from "./handleclickfetch.js"
 import initFetchApi from "./fetch.js"
 
 // Classe evento
-const handleClick = new initHandleClick('button')
+const handleClick = new initHandleClick('.btn-buscar')
 handleClick.initEvent()
 
 // Classe que faz o fetch
