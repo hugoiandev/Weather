@@ -12,7 +12,12 @@ export default class initHandleClick {
     }
 
     buscaCidade() {
-        cidade = buscaCidade.value
+        if (buscaCidade.value === '') {
+            alert('Digite uma cidade para continuar!')
+        } else {
+            cidade = buscaCidade.value
+        }
+
         this.fetchApi1 = new initFetchApi(`https://api.openweathermap.org/data/2.5/weather?q=${cidade},br&APPID=c3083241c1c8d585022a63795c5c94fa`)
         this.fetchApi1.fetch()
     }
